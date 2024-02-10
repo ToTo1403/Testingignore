@@ -13,6 +13,8 @@
 		525A1A742AEA8B7900D498C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 525A1A722AEA8B7900D498C1 /* Main.storyboard */; };
 		525A1A762AEA8B7A00D498C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 525A1A752AEA8B7A00D498C1 /* Assets.xcassets */; };
 		525A1A792AEA8B7A00D498C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 525A1A772AEA8B7A00D498C1 /* LaunchScreen.storyboard */; };
+		5266C00C2B77542300447D17 /* MijickPopupView in Frameworks */ = {isa = PBXBuildFile; productRef = 5266C00B2B77542300447D17 /* MijickPopupView */; };
+		5266C00E2B77543C00447D17 /* HII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5266C00D2B77543C00447D17 /* HII.swift */; };
 		529743022B4AF772003E5A02 /* SecViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529743012B4AF772003E5A02 /* SecViewVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +27,7 @@
 		525A1A752AEA8B7A00D498C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		525A1A782AEA8B7A00D498C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		525A1A7A2AEA8B7A00D498C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5266C00D2B77543C00447D17 /* HII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HII.swift; sourceTree = "<group>"; };
 		529743012B4AF772003E5A02 /* SecViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecViewVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -33,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5266C00C2B77542300447D17 /* MijickPopupView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +65,7 @@
 				525A1A6C2AEA8B7900D498C1 /* AppDelegate.swift */,
 				525A1A6E2AEA8B7900D498C1 /* SceneDelegate.swift */,
 				525A1A702AEA8B7900D498C1 /* ViewController.swift */,
+				5266C00D2B77543C00447D17 /* HII.swift */,
 				525A1A722AEA8B7900D498C1 /* Main.storyboard */,
 				529743012B4AF772003E5A02 /* SecViewVC.swift */,
 				525A1A752AEA8B7A00D498C1 /* Assets.xcassets */,
@@ -86,6 +91,9 @@
 			dependencies = (
 			);
 			name = testingpassing;
+			packageProductDependencies = (
+				5266C00B2B77542300447D17 /* MijickPopupView */,
+			);
 			productName = testingpassing;
 			productReference = 525A1A692AEA8B7900D498C1 /* testingpassing.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +122,9 @@
 				Base,
 			);
 			mainGroup = 525A1A602AEA8B7900D498C1;
+			packageReferences = (
+				5266C00A2B77542300447D17 /* XCRemoteSwiftPackageReference "PopupView" */,
+			);
 			productRefGroup = 525A1A6A2AEA8B7900D498C1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -142,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				525A1A712AEA8B7900D498C1 /* ViewController.swift in Sources */,
+				5266C00E2B77543C00447D17 /* HII.swift in Sources */,
 				529743022B4AF772003E5A02 /* SecViewVC.swift in Sources */,
 				525A1A6D2AEA8B7900D498C1 /* AppDelegate.swift in Sources */,
 				525A1A6F2AEA8B7900D498C1 /* SceneDelegate.swift in Sources */,
@@ -360,6 +372,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5266C00A2B77542300447D17 /* XCRemoteSwiftPackageReference "PopupView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Mijick/PopupView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5266C00B2B77542300447D17 /* MijickPopupView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5266C00A2B77542300447D17 /* XCRemoteSwiftPackageReference "PopupView" */;
+			productName = MijickPopupView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 525A1A612AEA8B7900D498C1 /* Project object */;
 }
